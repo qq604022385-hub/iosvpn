@@ -1,0 +1,7 @@
+DNS_WAIT duration_ms=31 received=75
+PASS: domestic DNS wakes 200 ms tunnel receive wait promptly
+PASS: encrypted 512-packet burst delivered without loss; 128 packets per step; rcvbuf=8388608
+PASS: idle pump wakes on Wintun event
+PASS: idle pump wakes on UDP and receives valid packet
+PASS: DNS probe survives first query loss and verifies encrypted retransmission response
+PASS: cancel and cipher/socket event cleanup

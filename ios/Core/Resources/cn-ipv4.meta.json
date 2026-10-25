@@ -1,0 +1,7 @@
+{
+  "source": "https://ftp.apnic.net/stats/apnic/delegated-apnic-latest",
+  "retrieved_date": "2026-10-08",
+  "cn_ranges": 5495,
+  "sha256": "58790ccf97a41759d9ce05dca1118b756079956808f4241a29f58358d129e39b",
+  "allocation_header": "2|apnic|20261008|89432|19830613|20261007|+1000"
+}

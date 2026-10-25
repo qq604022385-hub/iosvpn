@@ -1,0 +1,11 @@
+DNS_WAIT duration_ms=218 received=0
+FAIL received==(int)sizeof(query)+16&&elapsed<140 at 34 error=0
+FAIL domestic_wakeup_test()==0 at 38 error=0
+Traceback (most recent call last):
+  File "D:\codex\һ������\windows\test-hillstone-pump.py", line 6, in <module>
+    subprocess.run(['windows/dist/HillstonePumpTests.exe'],check=True,env=env,timeout=20)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\7\AppData\Local\Python\pythoncore-3.14-64\Lib\subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['windows/dist/HillstonePumpTests.exe']' returned non-zero exit status 1.

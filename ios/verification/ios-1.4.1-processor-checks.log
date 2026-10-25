@@ -1,0 +1,9 @@
+gcc.exe (Rev4, Built by MSYS2 project) 16.2.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+REPRODUCED: 8 occupied workers cannot dispatch a queued control command
+PASS: 16 workers dispatch the same queued command with 8 long-running tasks
+spawning 8 worker threads
+spawning 8 worker threads

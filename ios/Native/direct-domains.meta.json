@@ -1,0 +1,8 @@
+{
+  "source_url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt",
+  "retrieved_date": "2026-10-11",
+  "source_sha256": "6ecbfd74ab9682c1c9bf511fa0f734535514548a35e882bbf716cdb46e30ada1",
+  "rules": 111724,
+  "semantics": "exact and domain suffix kept separate; DNS nameserver policy, no fake IP",
+  "license": "GPL-3.0"
+}

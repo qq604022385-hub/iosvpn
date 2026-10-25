@@ -1,0 +1,39 @@
+{
+  "version": "1.4.1",
+  "build": 10,
+  "date": "2026-10-18",
+  "platform": "Windows host",
+  "checks": [
+    {
+      "check": "source",
+      "exit_code": 0,
+      "log": "ios/verification/ios-1.4.1-source-checks.log"
+    },
+    {
+      "check": "shell",
+      "exit_code": 0,
+      "log": "ios/verification/ios-1.4.1-shell-checks.log"
+    },
+    {
+      "check": "host",
+      "exit_code": 0,
+      "log": "ios/verification/ios-1.4.1-host-checks.log"
+    },
+    {
+      "check": "native",
+      "exit_code": 0,
+      "log": "ios/verification/ios-1.4.1-native-checks.log"
+    },
+    {
+      "check": "processor",
+      "exit_code": 0,
+      "log": "ios/verification/ios-1.4.1-processor-checks.log"
+    }
+  ],
+  "swift_tests": "4 new recovery XCTest methods, including Forti path loss/recovery/wake; not executed on Windows",
+  "apple_sdk_build": "not executed",
+  "ipa": "not generated",
+  "iphone_long_background": "not executed",
+  "gateway_hours_disconnect_cause": "not device-verified; source recovery gaps corrected",
+  "forti_recovery": "original IKE session retained during path loss; encrypted DNS revalidation after recovery; fresh OTP still required after full session loss"
+}

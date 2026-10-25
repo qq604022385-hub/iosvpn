@@ -1,0 +1,97 @@
+name: FortiOneTap
+options:
+  bundleIdPrefix: me.longxuan
+  deploymentTarget:
+    iOS: "16.0"
+settings:
+  base:
+    BUNDLE_ID: me.longxuan.fortionetap
+    SWIFT_VERSION: "5.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    CODE_SIGN_STYLE: Manual
+    DEVELOPMENT_TEAM: ""
+packages:
+  FortiCore:
+    path: .
+targets:
+  FortiOneTap:
+    type: application
+    platform: iOS
+    sources: [App, Shared]
+    dependencies:
+      - package: FortiCore
+      - sdk: NetworkExtension.framework
+      - sdk: Security.framework
+      - target: FortiTunnel
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(BUNDLE_ID)
+        PRODUCT_NAME: FortiOneTap
+        SWIFT_OBJC_BRIDGING_HEADER: Native/HillstoneAppBridge.h
+        OTHER_LDFLAGS: ["$(inherited)", "$(SRCROOT)/build/native/iphoneos/libFortiEngine.a"]
+        CODE_SIGN_ENTITLEMENTS: App/FortiOneTap.entitlements
+        GENERATE_INFOPLIST_FILE: NO
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: 一键连接
+        CFBundleShortVersionString: "1.4.8"
+        CFBundleVersion: "13"
+        UILaunchScreen: {}
+        UIRequiresFullScreen: true
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        NSHumanReadableCopyright: GPL-2.0-or-later
+        # iOS 17+ requires an explicit ATS exception for this numeric HTTP host.
+        NSAppTransportSecurity:
+          NSExceptionDomains:
+            "47.103.139.56":
+              NSExceptionAllowsInsecureHTTPLoads: true
+    entitlements:
+      path: App/FortiOneTap.entitlements
+      properties:
+        com.apple.developer.networking.networkextension: [packet-tunnel-provider]
+        keychain-access-groups: ["$(AppIdentifierPrefix)$(BUNDLE_ID)"]
+  FortiTunnel:
+    type: app-extension
+    platform: iOS
+    sources: [Tunnel, Shared]
+    dependencies:
+      - package: FortiCore
+      - sdk: NetworkExtension.framework
+      - sdk: Security.framework
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(BUNDLE_ID).Tunnel
+        PRODUCT_NAME: FortiTunnel
+        CODE_SIGN_ENTITLEMENTS: Tunnel/FortiTunnel.entitlements
+        SWIFT_OBJC_BRIDGING_HEADER: Native/FortiBridge.h
+        APPLICATION_EXTENSION_API_ONLY: YES
+        GENERATE_INFOPLIST_FILE: NO
+        OTHER_LDFLAGS: ["$(inherited)", "-force_load", "$(SRCROOT)/build/native/iphoneos/libFortiEngine.a"]
+    info:
+      path: Tunnel/Info.plist
+      properties:
+        CFBundleDisplayName: 一键连接 VPN
+        CFBundleShortVersionString: "1.4.8"
+        CFBundleVersion: "13"
+        NSAppTransportSecurity:
+          NSExceptionDomains:
+            "47.103.139.56":
+              NSExceptionAllowsInsecureHTTPLoads: true
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.networkextension.packet-tunnel
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).PacketTunnelProvider
+    entitlements:
+      path: Tunnel/FortiTunnel.entitlements
+      properties:
+        com.apple.developer.networking.networkextension: [packet-tunnel-provider]
+        keychain-access-groups: ["$(AppIdentifierPrefix)$(BUNDLE_ID)"]
+schemes:
+  FortiOneTap:
+    build:
+      targets:
+        FortiOneTap: all
+    archive:
+      config: Release

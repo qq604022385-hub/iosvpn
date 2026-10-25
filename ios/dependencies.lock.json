@@ -1,0 +1,9 @@
+{
+  "openssl": {
+    "version": "3.6.5",
+    "url": "https://github.com/openssl/openssl/releases/download/openssl-3.6.5/openssl-3.6.5.tar.gz",
+    "sha256": "a2157c2830efdec3788939b00c9b0638306d3f0bbb76dc4832ee503bb397df98"
+  },
+  "strongswan": { "source": "../src", "version": "6.1.0" },
+  "cn_ipv4": { "count": 5495, "sha256": "58790ccf97a41759d9ce05dca1118b756079956808f4241a29f58358d129e39b" }
+}

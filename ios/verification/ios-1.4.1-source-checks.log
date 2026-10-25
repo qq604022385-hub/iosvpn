@@ -1,0 +1,5 @@
+PASS: protocol parity, token lifecycle, tunnel integration, entitlement declarations and 5495 route resources
+PASS: Hillstone source integration, certificate trust flow and portable native ABI
+PASS: bounded log/batch integration, coalesced persistence and foreground log polling
+PASS: sleep persistence, stop reasons, Forti phases and DNS latency diagnostics
+PASS: Forti worker capacity/self-check and in-VPN DNS selection/TCP timing

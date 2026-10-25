@@ -1,0 +1,28 @@
+gcc.exe (Rev4, Built by MSYS2 project) 16.2.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+PASS: SCVPN 3DES-CBC known ciphertext
+PASS: SCVPN 3DES-CBC decryption
+PASS: incomplete cipher block rejected without padding
+PASS: reused independent TX/RX cipher contexts match 256 per-packet IV vectors
+PASS: SCVPN session lifecycle without network access
+PASS: AAAA NODATA preserves question, transaction and valid IPv4/UDP checksums
+PASS: A queries and short input/output are not intercepted
+PASS: fragmented and compressed/malformed DNS questions are not synthesized
+PASS: SYN MSS clamped to 1160 with valid TCP and IP checksums
+PASS: smaller MSS and malformed TCP options are unchanged
+PASS: IPv6 no-route reply with independently assembled pseudo-header checksum
+PASS: no recursive ICMP errors, multicast replies or output overflows
+PASS: IPv6 error bounded to minimum MTU 1280
+PASS: domestic suffix matching is case insensitive and foreign DNS stays on VPN
+PASS: actual UDP domestic relay preserves DNS identity and packet checksums
+PASS: actual UDP SVCB/HTTPS NODATA returns immediately without gateway fallback
+PASS: valid NXDOMAIN is preserved without delayed gateway fallback
+PASS: bounded gateway DNS metadata measures query/response elapsed time
+PASS: SERVFAIL and truncated direct DNS still fall back through encrypted gateway
+PASS: direct DNS timeout sends exact original query through encrypted gateway channel
+PASS: suspended worker sends heartbeat and accepts a real encrypted reply before expiration
+PASS: silent gateway still expires after bounded resume grace; no fabricated heartbeat
+PASS: host C compilation, libc namespace compatibility and 22 native checks

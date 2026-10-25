@@ -1,0 +1,24 @@
+{
+  "source": "user supplied 1.3.2 build 5 device diagnostics",
+  "records": 44,
+  "last": {
+    "tx": 12108,
+    "rx": 105528,
+    "direct_dns": 3,
+    "fallback_dns": 0,
+    "heartbeat_age_ms": 1502,
+    "tx_bytes": 2019410,
+    "rx_bytes": 131081613,
+    "rcvbuf": 8388608,
+    "flow_v4": 12073,
+    "flow_v6": 0,
+    "invalid": 0,
+    "held_or_filtered": 0,
+    "forwarded": 12064,
+    "local_reply": 9,
+    "written": 105495,
+    "write_failed": 0,
+    "family_mismatch": 0
+  },
+  "note": "rx_bytes and tx_bytes are cumulative tunnel traffic, not resident memory; no memory measurement in this old log"
+}

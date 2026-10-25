@@ -1,0 +1,21 @@
+test_device_architecture_validation (__main__.HostTests.test_device_architecture_validation) ... ok
+test_extensionless_script_normalization (__main__.HostTests.test_extensionless_script_normalization) ... ok
+test_full_build_log_keeps_stderr_and_failure_status (__main__.HostTests.test_full_build_log_keeps_stderr_and_failure_status) ... ok
+test_macos_native_command_rejects_sdk_without_standard_headers (__main__.HostTests.test_macos_native_command_rejects_sdk_without_standard_headers) ... ok
+test_macos_native_command_uses_host_sdk_despite_ios_environment (__main__.HostTests.test_macos_native_command_uses_host_sdk_despite_ios_environment) ... ok
+test_missing_extension_is_rejected (__main__.HostTests.test_missing_extension_is_rejected) ... ok
+test_normalizer_preserves_binary_and_non_source_files (__main__.HostTests.test_normalizer_preserves_binary_and_non_source_files) ... ok
+test_payload_extension_and_checksums (__main__.HostTests.test_payload_extension_and_checksums) ... ok
+test_route_corruption_is_rejected (__main__.HostTests.test_route_corruption_is_rejected) ... ok
+test_sandboxed_source_and_xauth_patch (__main__.HostTests.test_sandboxed_source_and_xauth_patch) ... ok
+test_shell_preflight_accepts_lf_without_modifying_script (__main__.HostTests.test_shell_preflight_accepts_lf_without_modifying_script) ... ok
+test_shell_preflight_rejects_bom (__main__.HostTests.test_shell_preflight_rejects_bom) ... ok
+test_shell_preflight_rejects_crlf_with_path_and_line (__main__.HostTests.test_shell_preflight_rejects_crlf_with_path_and_line) ... ok
+test_shell_preflight_rejects_missing_scripts (__main__.HostTests.test_shell_preflight_rejects_missing_scripts) ... ok
+test_signing_material_is_rejected (__main__.HostTests.test_signing_material_is_rejected) ... ok
+test_source_destination_outside_build_is_rejected (__main__.HostTests.test_source_destination_outside_build_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 4.014s
+
+OK

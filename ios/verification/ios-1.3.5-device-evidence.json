@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-13",
+  "source": "user supplied iPhone 1.3.4 build 7 logs",
+  "hillstone": {
+    "resolver": "8.8.8.8",
+    "direct_reply": 6,
+    "direct_avg_ms": 102,
+    "direct_max_ms": 240,
+    "vpn_reply": 11,
+    "vpn_avg_ms": 885,
+    "vpn_max_ms": 2563,
+    "invalid": 0,
+    "write_failed": 0,
+    "held_or_filtered": 22,
+    "rx_bytes": 7670344,
+    "memory_bytes": 13419248,
+    "stop_reason": 1
+  },
+  "forti": {
+    "last_stage": "local VICI connection and credential loading",
+    "failure": "45 second provider timeout",
+    "IKE_XAuth_reached": false
+  },
+  "limitations": [
+    "No TCP handshake timing",
+    "No QUIC status",
+    "No website-specific timing",
+    "No new build acceptance"
+  ]
+}

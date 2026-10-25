@@ -1,0 +1,156 @@
+{
+  "basis": "ios/artifacts/ios 1.4.0, plus background recovery 1.4.1",
+  "backup": "ios\\build\\pre-background-1.4.1.zip",
+  "changes": [
+    {
+      "file": "App/FortiOneTapApp.swift",
+      "previous_sha256": "d14e0bded42c08934e8d981d51bc134ed1a3cbc183c25be150afd4bad6c6b369",
+      "sha256": "7c673f770f2adca7ce113680b0d5959e1b71a5cf3bcddfb796c8d76d47e14638"
+    },
+    {
+      "file": "App/NetworkProbe.swift",
+      "previous_sha256": null,
+      "sha256": "cb6d78059c227900acd847d539e8f9ff67e688d4653f47763ec90c9359e8834f"
+    },
+    {
+      "file": "App/VPNController.swift",
+      "previous_sha256": "3aa977bb1430fd471a63135bd4c123681e646564e7c6098fbc3fb90f80929d06",
+      "sha256": "2c8dbaeda5d5846172a174c934142c217f934a24b9e31b086f807017a9e29636"
+    },
+    {
+      "file": "CONNECTION-FIX-2026-10-10.md",
+      "previous_sha256": null,
+      "sha256": "4cd34f819b87a58d3f5c5badc58e78061d4861fcf192cd8644fa93a61f96e0c6"
+    },
+    {
+      "file": "Core/DNSProbeMessage.swift",
+      "previous_sha256": null,
+      "sha256": "e1c2c40de524cc9fc3e280693710e40b0c02b035a20222db5050cd5142964702"
+    },
+    {
+      "file": "Core/DomainRouteCache.swift",
+      "previous_sha256": null,
+      "sha256": "1edc2fd029c48a72a754900dac3fe75b7fe17793abd74836750291a5ae7de707"
+    },
+    {
+      "file": "Core/HillstoneSettings.swift",
+      "previous_sha256": "a842f7d9c1e1d5bdff7991e1615ae4b6a3eee33485485135bf9947a8651aec81",
+      "sha256": "0345db36d8a6e869cea1d261f57059cd440dc993e37f438fd2dc840623912e00"
+    },
+    {
+      "file": "Core/IPv4CIDR.swift",
+      "previous_sha256": "0722fcebcc357ae784beaeedd06ca21a00cbefd24157f8ecddf778cd70d2066d",
+      "sha256": "da560856f88d85e451cf7b90575bf685547928a1bc69e9ed37dd1de66cfa0a89"
+    },
+    {
+      "file": "Core/TunnelRecoveryPolicy.swift",
+      "previous_sha256": null,
+      "sha256": "b3c93f29bb8cef4c0a5b6afacccdde3d2f13af78a6122032208df10b800a349a"
+    },
+    {
+      "file": "Core/TunnelTraffic.swift",
+      "previous_sha256": null,
+      "sha256": "c57855ced9c464217256c50b910051b3b52e972fc1d45cff445be30f89be27bd"
+    },
+    {
+      "file": "DATA-FIX-1.0.3.md",
+      "previous_sha256": null,
+      "sha256": "ca8240167af76b8d4893cbe246483206e9b8c31f0ee8bc959b99596ce15c5e13"
+    },
+    {
+      "file": "Native/FortiBridge.c",
+      "previous_sha256": "40cfae793ec399ed2d51c54635ff061e02cc1a1f35ca14658df7afda7f8c3362",
+      "sha256": "41a10aded797398cea51e9b1c519920adcf72a4d35a8cf670960691cc72b0e1c"
+    },
+    {
+      "file": "Native/scvpn.c",
+      "previous_sha256": "844b4ccdc84022a395c1988154d3713e43ffb331206088acc3c13a2b8b8972d6",
+      "sha256": "a9ff9b332beacb2ab27f5f4b04c78fdbcba76e5006a1ddfc02974882b66bfeeb"
+    },
+    {
+      "file": "Native/scvpn.h",
+      "previous_sha256": "67548c14b52e4f101c07ef4368571a645516168a9d5f605b2eb3205f169e51eb",
+      "sha256": "b5fd67ed430b33787e7cdb8074df56105584c573c9f342089c52bc226c7fb01f"
+    },
+    {
+      "file": "Native/split_dns.h",
+      "previous_sha256": "e312ae2a3ca05e5b0ab55780607cf96329ced4b8a18b06cb3049f755fbd057c7",
+      "sha256": "b7ac134907eed15cb76f45190e1a05daeee095c2fc53e923e5b29b517d4a9195"
+    },
+    {
+      "file": "Native/tun_device_ios.c",
+      "previous_sha256": "f887b455450652c21a51ba5e9a5b55a5f9014e1e3c9a61b4bc962b4727bc34bf",
+      "sha256": "c043042a9d1b7512388f346150a41a889ab0268b09b05a9c71ee5c51f203f488"
+    },
+    {
+      "file": "NativeTests/scvpn_test.c",
+      "previous_sha256": "e04a50a3a890a317c020f8443fdf3e37b9f165ab96857a678928c9870e505245",
+      "sha256": "1b0413876b233a692d8a382b377119af81b1a57564b175057b72a3cdcaf2275b"
+    },
+    {
+      "file": "project.yml",
+      "previous_sha256": "e0134716e4fbc076d04f2420dd78a12e175b26d93e60beed6e68fb468a582f98",
+      "sha256": "5261d1354743c258e92ae7fc42a5512ce1264bcac6c45e64a8be5d9c03cc9e56"
+    },
+    {
+      "file": "README.md",
+      "previous_sha256": "61367d57db54baed2912ffe9ab7c8bfdfb952c9bb904fe7c7d7b02c95d8db26a",
+      "sha256": "fd403fa81e996931e2a8c4de0dc77aa66c1c3163ee89232cd6f558311a36c86e"
+    },
+    {
+      "file": "scripts/create_source_bundle.py",
+      "previous_sha256": "99da706159fb4a2f977b01291f6b7cb0500b7dd400a79bec892088b71ba2a537",
+      "sha256": "651f0e447cf2f88aa166e6c63ea70c4784ec9c4c48d91fa60d647f6324738978"
+    },
+    {
+      "file": "scripts/test_native.py",
+      "previous_sha256": "d78f7100d31096ef21e7e4d20e2505eb22c049ef2203c08ec7f68e07e0d055a3",
+      "sha256": "e14855ab7a058e729652395bae44075a46cfc012088c5d5c2ff375a3d01dc61e"
+    },
+    {
+      "file": "scripts/verify_source.py",
+      "previous_sha256": "5dcb8117789e1deee59f1089f917d4cff41b4bfabee3c162d944c920e0daab8f",
+      "sha256": "301dd4480a7cee0b4b7a7993bf3e932a9fcfb489b6bd027b2c2ba583f3350fad"
+    },
+    {
+      "file": "Shared/TunnelDiagnostics.swift",
+      "previous_sha256": null,
+      "sha256": "d6159aaa65a0123147396892f84ce4b0eed585eb0ad6b51d340d7e4f3b56e3ac"
+    },
+    {
+      "file": "SPLIT-FIX-1.0.2.md",
+      "previous_sha256": null,
+      "sha256": "b0497990e0556f2dbd1e2da9d3ec33f168f224955ba6d94f395dbdc1f7286fbf"
+    },
+    {
+      "file": "Tests/DomainRouteTests.swift",
+      "previous_sha256": null,
+      "sha256": "61e7107a277a9c54de738fee39db07f94bfb027dd7112ecd67398d2c8032cc00"
+    },
+    {
+      "file": "Tests/FortiCoreTests.swift",
+      "previous_sha256": "e9b1687c612a90cb81c3a7768ebeea2c23b55acb8c84ca78c7a62da1e8ea457b",
+      "sha256": "8e331eaa07c2d70e5c34abe3cf054b3a4b4ce732b60c38259d0f88aae0f876f9"
+    },
+    {
+      "file": "Tests/TunnelDNSProbeTests.swift",
+      "previous_sha256": null,
+      "sha256": "ebdab478e5d8a8e85cace012ed2605d21c46a3c4004cf64ad499b2c05e9e439f"
+    },
+    {
+      "file": "Tests/TunnelRecoveryTests.swift",
+      "previous_sha256": null,
+      "sha256": "e398b5059bfdc2e90112fc6aab9b2f44e73a2274961c3dcbb12320f9cc187146"
+    },
+    {
+      "file": "Tunnel/HillstoneTunnel.swift",
+      "previous_sha256": "29a3b45de57e9a1876c023c41947c78957f41ab29a540e59330b71c3435c2802",
+      "sha256": "7220e8967e1b51b47228a0defe275edb8def60c9d081a9fea8bda521f8c1b425"
+    },
+    {
+      "file": "Tunnel/PacketTunnelProvider.swift",
+      "previous_sha256": "6673e90e26446b6356a4e3807c92bd99c53083fe24b5cd7636efc7138429e383",
+      "sha256": "2d370b6b76dfa2332c557fb4b648ed772223c7cb01c3d1a9d814283967fcf773"
+    }
+  ]
+}
